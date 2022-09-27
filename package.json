@@ -1,24 +1,37 @@
 {
-  "name": "delete",
+  "name": "next-grid-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
-    "next": "12.3.1",
+    "@types/classnames": "^2.3.1",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "next": "12.3.0",
+    "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.3"
+    "@svgr/webpack": "^6.3.1",
+    "@types/node": "^18.7.16",
+    "@types/react": "^18.0.19",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.3.0",
+    "stylelint": "^14.11.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-order-config-standard": "^0.1.3",
+    "typescript": "^4.8.3"
   }
 }
