@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+В процессе реализации...
 
-## Getting Started
+Next.js, {useState, useEffect, useContext, useReducer}, SSR, TypeScript, GRID.
 
-First, run the development server:
+Приложение SPA - Востребованные профессии настоящего.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Функционал:
+1. Sidebar - содержит 4 главных раздела - (Курсы, Сервисы, Книги, Продукты). Каждый раздел внутри себя содержит подразделы с соответствующей информацией.
+2. Внутри карточки профессии - сортировка по рейтингу и по цене.
+3. Поиск профессии по приложению.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.ts`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1.Реализован Routing, настройка каждой страницы для уникального адреса, в т.ч. и поиск на странице.
+2. Работа с Rest API. 
+3. Helpers - 1) Функция для красивого отображения стоимости курсов - 5 000 000 пример;
+             2) Функция, чтобы проскланять "отзыв, отзыва, отзывов";
+4. Основные стили вынесены в переменные - папка styles - globals.css
+             
+             
+Большое количество кастомных компонентов-тэгов для ускорения построяния приложения. Структура компонента состоит из 3-х файлов: Component.tsx, Component.module.css, Component.props.ts.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+В последнем файле определяется интерфейс компонента, от какого элемента наследуется и типизируются пропсы.
+![2022-10-17_20-02-56](https://user-images.githubusercontent.com/101303690/196184169-482033c9-c768-4d95-b369-a45137f34e56.png)
 
-## Learn More
+В основном приложение построенно с помощью сетки GRID (grid-template-areas) (Работа с шаблоном сетки, именование линий).
 
-To learn more about Next.js, take a look at the following resources:
+env.local - NEXT_PUBLIC_DOMAIN=https://courses-top.ru
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![2022-10-17_20-09-31](https://user-images.githubusercontent.com/101303690/196185643-f7ec7dad-7cb7-4d2b-93ac-734283192f12.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![2022-10-17_20-10-06](https://user-images.githubusercontent.com/101303690/196185689-da3bd78c-1a6c-413f-b182-3a7212b3490c.png)
