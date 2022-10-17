@@ -24,7 +24,7 @@ export const Button = ({
             [styles.down]: arrow == "down",
           })}
         >
-          <img src="./arrow.svg" alt="arr" />
+          <img src="/arrow.svg" alt="arr" />
         </span>
       )}
     </button>

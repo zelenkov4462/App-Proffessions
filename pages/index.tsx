@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Htag, P, Rating, Tag } from "../components";
+import { Button, Htag, Input, P, Rating, Tag, Textarea } from "../components";
 import { useEffect, useState } from "react";
 import { func } from "prop-types";
 import Star from "../public/star.svg";
@@ -41,6 +41,8 @@ function Home({ menu }: HomeProps): JSX.Element {
       </Tag>
       <Tag color="primary">Primary</Tag>
       <Rating rating={counter} isEditable={true} setRating={setCounter} />
+      <Input placeholder="тест" />
+      <Textarea placeholder="textarea" />
     </>
   );
 }
