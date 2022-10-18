@@ -1,6 +1,6 @@
 В процессе реализации...
 
-Next.js, {useState, useEffect, useContext, useReducer}, SSR, TypeScript, GRID.
+Next.js, {useState, useEffect, useContext, useReducer}, SSR, TypeScript, GRID, React-hook-form.
 
 Приложение SPA - Востребованные профессии настоящего.
 
