@@ -11,3 +11,21 @@
 .editable {
 	cursor: pointer;
 }
+
+/*.error img {*/
+/*	stroke: var(--red);*/
+/*}*/
+
+.ratingWrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.errorMessage {
+	/*position: absolute;*/
+	/*bottom: -20px;*/
+	margin-left: -15px;
+	color: var(--red);
+
+}
