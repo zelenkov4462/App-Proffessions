@@ -1,6 +1,6 @@
 Next.js, SSR { getStaticProps, getStaticPaths }, TypeScript, {useState, useEffect, useContext, useReducer, useRouter}, HOC, classnames  GRID, React-hook-form, framer-motion, eslint, stylelint, husky.
 
-Приложение SPA - Востребованные профессии настоящего. (Адаптивность)
+Приложение SPA - Востребованные профессии настоящего (Адаптивность).
 
 
 Функционал:
@@ -10,10 +10,10 @@ Next.js, SSR { getStaticProps, getStaticPaths }, TypeScript, {useState, useEffec
 4. Доступность использования сайта с клавиатуры по активным элементам (TAB, SPACE, ENTER).
 5. Отправка формы отзывы.
 6. Валидация формы при пустых полях при заполнении.
+7. Возможность вернуться наверх страницы при нажатии соответсвующей кнопки (появляется плавно в зависимости от того сколько мы проскролили)
 
 
-
-
+Дополнительно:
 1. Страницы генерируются на стороне сервера.
 2. Работа с Rest API. 
 3. Helpers - 1) Функция для красивого отображения стоимости курсов - 5 000 000 пример;
@@ -50,3 +50,7 @@ env.local - NEXT_PUBLIC_DOMAIN=https://courses-top.ru
 ![2022-10-17_20-10-06](https://user-images.githubusercontent.com/101303690/196185689-da3bd78c-1a6c-413f-b182-3a7212b3490c.png)
 
 ![2022-10-18_15-46-41](https://user-images.githubusercontent.com/101303690/196382668-ef7e4202-a18b-47f6-a19b-dd4c2423f6aa.png)
+
+![2022-10-19_14-25-04](https://user-images.githubusercontent.com/101303690/196624933-19ebbc1a-3504-431b-a850-72e4cbba6c75.png)
+
+
