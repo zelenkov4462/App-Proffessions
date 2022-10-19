@@ -5,6 +5,7 @@
 	border: none;
 	border-radius: 5px;
 	outline: var(--primary);
+	outline-width:1px;
 	background: var(--white);
 	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
 
@@ -15,6 +16,10 @@
 
 .input::placeholder {
 	color: var(--gray);
+}
+
+.input:focus {
+	border: 2px solid var(--primary);
 }
 
 .error {

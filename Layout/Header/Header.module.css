@@ -1,53 +1,63 @@
-.header{
-    display: none;
-    /*grid-template-columns: 1fr 40px;*/
-    /*gap: 10px;*/
-    /*margin: 15px 15px 0 15px;*/
+.header {
+	display: none;
+
+	/* grid-template-columns: 1fr 40px; */
+
+	/* gap: 10px; */
+
+	/* margin: 15px 15px 0 15px; */
 }
 
 .menu {
-    width: 40px;
-    height: 40px;
-    background: var(--white);
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
+	width: 40px;
+	height: 40px;
+
+	cursor: pointer;
+
+	border: none;
+	border-radius: 10px;
+	background: var(--white);
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
 }
 
 .cross {
-    width: 40px;
-    height: 40px;
-    background: var(--white);
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    z-index: 11;
-    top: 15px;
-    right: 15px;
+	position: fixed;
+	z-index: 11;
+	top: 15px;
+	right: 15px;
+
+	width: 40px;
+	height: 40px;
+
+	cursor: pointer;
+
+	border: none;
+	border-radius: 10px;
+	background: var(--white);
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
 }
 
-.mobileMenu{
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: #F5F6F8;
-    right: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    padding: 20px 10px;
+.mobileMenu {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	overflow-y: scroll;
+
+	padding: 20px 10px;
+
+	background-color: #F5F6F8;
 }
 
 @media (max-width: 765px) {
-    .header {
-        display: grid;
-        grid-template-columns: 1fr 40px;
-        gap: 10px;
-        margin: 15px 15px 0 15px;
-    }
+	.header {
+		display: grid;
+		grid-template-columns: 1fr 40px;
+		gap: 10px;
 
+		margin: 15px 15px 0;
+	}
 }
-

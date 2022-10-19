@@ -4,6 +4,10 @@
 	background-color: var(--primary);
 }
 
+.star {
+	display: inline-block;
+}
+
 .star img {
 	margin-right: 5px;
 }

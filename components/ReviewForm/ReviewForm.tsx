@@ -12,6 +12,7 @@ import { API } from "../../helpers/api";
 import { useState } from "react";
 
 export const ReviewForm = ({
+  isOpened,
   productId,
   className,
   ...props
@@ -56,6 +57,7 @@ export const ReviewForm = ({
           })}
           placeholder="Имя"
           error={errors.name}
+          tabIndex={isOpened ? 0 : -1}
         />
         <Input
           {...register("title", {
@@ -64,6 +66,7 @@ export const ReviewForm = ({
           className={styles.title}
           placeholder="Заголовок отзыва"
           error={errors.title}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.rating}>
           <span>Оценка:</span>
@@ -77,6 +80,7 @@ export const ReviewForm = ({
                 setRating={field.onChange}
                 ref={field.ref}
                 error={errors.rating}
+                tabIndex={isOpened ? 0 : -1}
               />
             )}
             name="rating"
@@ -89,9 +93,12 @@ export const ReviewForm = ({
           className={styles.description}
           placeholder="Текст отзыва"
           error={errors.description}
+          tabIndex={isOpened ? 0 : -1}
         />
         <div className={styles.submit}>
-          <Button appearance="primary">Отправить</Button>
+          <Button appearance="primary" tabIndex={isOpened ? 0 : -1}>
+            Отправить
+          </Button>
           <span className={styles.info}>
             * Перед публикацией отзыв пройдет предварительную модерацию и
             проверку
