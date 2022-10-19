@@ -9,7 +9,7 @@ import { useForm, Controller } from "react-hook-form";
 import { IReviewForm, IReviewSentResponse } from "./ReviewForm.interface";
 import axios from "axios";
 import { API } from "../../helpers/api";
-import { useState } from "react";
+import { ErrorInfo, useState } from "react";
 
 export const ReviewForm = ({
   isOpened,
@@ -43,7 +43,7 @@ export const ReviewForm = ({
       } else {
         setError("Что-то пошло не так");
       }
-    } catch (e) {
+    } catch (e: any) {
       setError(e.message);
     }
   };
@@ -124,7 +124,7 @@ export const ReviewForm = ({
             src="/close.svg"
             alt="close"
             className={styles.close}
-            onClick={() => setError(undefined)}
+            onClick={() => setError("")}
           />
         </div>
       )}

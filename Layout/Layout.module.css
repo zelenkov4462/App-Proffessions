@@ -14,7 +14,7 @@
 .header {
 	grid-area: header;
 
-	/*display: none;*/
+	/* display: none; */
 }
 
 .sidebar {
@@ -23,6 +23,7 @@
 
 .body {
 	grid-area: body;
+
 	outline: none;
 }
 
@@ -44,9 +45,11 @@
 		display: none !important;
 	}
 
-	/*.header {*/
-	/*	display: block;*/
-	/*}*/
+	/* .header { */
+
+	/*	display: block; */
+
+	/* } */
 
 	.body {
 		padding: 15px;
@@ -54,14 +57,17 @@
 }
 
 .skipLink {
-	display: block;
 	position: fixed;
-	left: 100px;
 	top: 0;
+	left: 100px;
+
+	display: block;
 	overflow: hidden;
+
 	height: 0;
-	background: var(--primary);
+
 	color: var(--white);
+	background: var(--primary);
 }
 
 .displayed {

@@ -43,10 +43,6 @@
 	grid-column: start / middle;
 }
 
-.advBlock {
-	grid-column: middle / end;
-}
-
 .logo img {
 	border-radius: 5px;
 }
@@ -106,6 +102,7 @@
 .advBlock {
 	font-size: 16px;
 	line-height: 22px;
+	grid-column: middle / end;
 }
 
 .advTitle {
@@ -152,25 +149,8 @@
 
 .reviews {
 	overflow: hidden;
+
 	padding: 30px;
-
-	;
-}
-
-/*.closed {*/
-/*	overflow: hidden;*/
-
-/*	max-height: 0;*/
-/*	padding: 0;*/
-/*}*/
-
-/*.opened {*/
-/*	max-height: auto;*/
-/*	padding: 30px;*/
-/*}*/
-
-.reviews {
-	/* margin-top: -30px; */
 }
 
 .rateTitle a {
