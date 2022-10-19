@@ -42,8 +42,6 @@ Next.js, SSR { getStaticProps, getStaticPaths }, TypeScript, {useState, useEffec
 
 В основном приложение построенно с помощью сетки GRID (grid-template-areas) (Работа с шаблоном сетки, именование линий).
 
-env.local - NEXT_PUBLIC_DOMAIN=https://courses-top.ru
-
 ![2022-10-17_20-09-31](https://user-images.githubusercontent.com/101303690/196185643-f7ec7dad-7cb7-4d2b-93ac-734283192f12.png)
 
 
