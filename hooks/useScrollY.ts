@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
 export const useScrollY = (): number => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const isBrowser = typeof window !== "indefined";
   const [scrollY, setScrollY] = useState<number>(0);
 
