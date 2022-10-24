@@ -2,6 +2,7 @@
   "name": "next-grid-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zelenkov4462.github.io/ProffessoinsApp-Next.js",
   "scripts": {
     "prepare": "husky install",
     "export": "next export",
@@ -10,7 +11,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "stylelint": "stylelint \"**/*.css\" --fix"
+    "stylelint": "stylelint \"**/*.css\" --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/classnames": "^2.3.1",
@@ -18,6 +21,7 @@
     "date-fns": "^2.29.3",
     "eslint-plugin-react-hooks": "^4.6.0",
     "framer-motion": "^7.5.4",
+    "gh-pages": "^4.0.0",
     "next": "12.3.0",
     "prettier": "^2.7.1",
     "react": "18.2.0",
