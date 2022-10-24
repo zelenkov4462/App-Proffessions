@@ -24,6 +24,7 @@
 	text-transform: uppercase;
 
 	color: var(--gray-dark);
+	outline-offset: -1px;
 
 	font-size: 12px;
 	font-weight: 300;
@@ -39,17 +40,21 @@
 }
 
 .secondLevelBlock {
-	/*display: none;*/
+	/* display: none; */
 	overflow: hidden;
 }
 
-/*.secondLevelBlockOpened {*/
-/*	display: block;*/
-/*}*/
+/* .secondLevelBlockOpened { */
 
-/*.secondLevelBlockOpened:last-child {*/
-/*	margin-bottom: 20px;*/
-/*}*/
+/*	display: block; */
+
+/* } */
+
+/* .secondLevelBlockOpened:last-child { */
+
+/*	margin-bottom: 20px; */
+
+/* } */
 
 .thirdLevel {
 	display: block;
@@ -59,6 +64,7 @@
 	cursor: pointer;
 
 	color: var(--gray-dark);
+	outline-offset: -1px;
 
 	font-size: 14px;
 	font-weight: 500;

@@ -14,7 +14,7 @@
 .header {
 	grid-area: header;
 
-	/*display: none;*/
+	/* display: none; */
 }
 
 .sidebar {
@@ -23,6 +23,8 @@
 
 .body {
 	grid-area: body;
+
+	outline: none;
 }
 
 .footer {
@@ -43,11 +45,31 @@
 		display: none !important;
 	}
 
-	/*.header {*/
-	/*	display: block;*/
-	/*}*/
+	/* .header { */
+
+	/*	display: block; */
+
+	/* } */
 
 	.body {
 		padding: 15px;
 	}
+}
+
+.skipLink {
+	position: fixed;
+	top: 0;
+	left: 100px;
+
+	display: block;
+	overflow: hidden;
+
+	height: 0;
+
+	color: var(--white);
+	background: var(--primary);
+}
+
+.displayed {
+	height: auto;
 }

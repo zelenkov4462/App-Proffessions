@@ -4,6 +4,10 @@
 	background-color: var(--primary);
 }
 
+.star {
+	display: inline-block;
+}
+
 .star img {
 	margin-right: 5px;
 }
@@ -12,20 +16,24 @@
 	cursor: pointer;
 }
 
-/*.error img {*/
-/*	stroke: var(--red);*/
-/*}*/
+/* .error img { */
+
+/*	stroke: var(--red); */
+
+/* } */
 
 .ratingWrapper {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
-	position: relative;
 }
 
 .errorMessage {
-	/*position: absolute;*/
-	/*bottom: -20px;*/
-	margin-left: -15px;
-	color: var(--red);
+	/* position: absolute; */
 
+	/* bottom: -20px; */
+	margin-left: -15px;
+
+	color: var(--red);
 }
